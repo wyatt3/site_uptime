@@ -21,6 +21,7 @@ try:
 except:
     print('site is down')
     if up == "true":
+        print('send message')
         this_check = open(r"last_check.txt", "w")
         this_check.write("false")
         this_check.close()
