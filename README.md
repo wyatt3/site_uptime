@@ -10,6 +10,6 @@ Then you'll want to schedule this to run every minute (or however often you want
 You can edit the root user crontab with `sudo crontab -e`. You can have a crontab for each user but I like to keep everything in the root crontab.
 Add the following to your crontab file.
 
-    */1 * * * * python [~/stie_uptime/ping.py]
+    */1 * * * * python ~/site_uptime/ping.py
     
 Then ping.py should run every minute and check if the site is up.
