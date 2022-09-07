@@ -6,7 +6,7 @@ up = last_check.read()
 last_check.close()
 try:
     r = requests.head("https://nyoom.wyattjohnson.net", timeout=2.5)
-
+    print(r.status_code)
     if r.status_code == 200 and up != "true":
         this_check = open(r"last_check.txt", "w")
         this_check.write("true")
@@ -19,6 +19,7 @@ try:
         }
         requests.post(url, json = message)
 except:
+    print('site is down')
     if up == "true":
         this_check = open(r"last_check.txt", "w")
         this_check.write("false")
