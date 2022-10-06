@@ -1,6 +1,6 @@
 import requests
 import os
-url = 'https://discord.com/api/webhooks/1016725902140379287/GVIDVseXQrWGClj7x9gyc_VNm-rN_vQnNcMfzprCUfIuW8tsmndqKDQnb1a7FiZLfREk'
+url = 'discord/webhook/url'
 
 absolute_path = os.path.dirname(os.path.abspath(__file__))
 file_path = absolute_path + "/last_check.txt"
